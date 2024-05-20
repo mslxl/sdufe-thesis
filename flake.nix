@@ -18,7 +18,9 @@
             plantuml
             mermaid-cli
             just
-            tectonic
+
+            texlive.combined.scheme-full
+            texlab
           ];
 
           LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath buildInputs;

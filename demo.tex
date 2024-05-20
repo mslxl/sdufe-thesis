@@ -1,0 +1,160 @@
+\documentclass{sdufe-thesis}
+
+
+\sdufesetup {
+    info = {
+        title       = {延迟退休对城镇职工养老金替代率的影响\\——以山东省为例},
+        title*      = {The Effects on Pension Replacement Rate Caused by Delayed Retirement of Urban Employees \\ ——Take Shandong Province as an Example},
+        department  = {计算机科学与技术学院},
+        major       = {计算机科学与技术},
+        class       = {xx 级 xx 班},
+        student-id  = {2021202012345},
+        author      = {张三},
+        supervisor  = {李某某},
+        year        = 2024,
+        month       = 4,
+    },
+    style = {
+        font = times,
+        math-font = termes,
+        cjk-font = fandol,
+        bib-resource = {ref/bachelor-refs.bib},
+    }
+}
+
+\begin{document}
+\tableofcontents
+
+\mainmatter
+
+\chapter{测试}
+
+\section{文字测试}
+
+This is SDUFE thesis template, welcome to use!
+
+君不见，左纳言，右纳史，朝承恩，暮赐死。行路难，不在水，不在山，只在人情反覆间！
+
+\section{公式}
+
+\subsection{算符、希腊字母}
+
+\[\sum\prod\int\iint\alpha\beta\gamma\xi\zeta\eta\epsilon\varepsilon\theta\vartheta
+  \phi\varphi\psi\]
+
+
+\subsection{几类数学字母表}
+
+\begin{itemize}
+  \item \verb|\mathcal|: $\mathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+  \item \verb|\mathscr|: $\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+  \item \verb|\mathbb|: $\mathbb{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+\end{itemize}
+
+
+\subsection{（不）带编号单行公式}
+
+\begin{equation}
+  a^2 + b^2 = c^2.
+\end{equation}
+
+\[ a^2 + b^2 = c^2.\]
+
+\subsection{（不）带编号多行公式}
+
+\begin{align}
+  \text{sum} & = 1 + 2 + \cdots + n \\
+             & = \frac12 n(n+1).
+\end{align}
+
+\begin{align*}
+  \text{sum} & = 1 + 2 + \cdots + n \\
+             & = \frac12 n(n+1).
+\end{align*}
+
+\subsection{矩阵}
+
+\[\begin{pmatrix}
+  a_{11} & a_{22} & a_{33} \\
+  a_{21} & a_{22} & a_{23} \\
+  a_{31} & a_{32} & a_{33} \\
+\end{pmatrix} \quad
+\begin{vmatrix}
+  a_{11} & a_{22} & a_{33} \\
+  a_{21} & a_{22} & a_{23} \\
+  a_{31} & a_{32} & a_{33} \\
+\end{vmatrix} \quad
+\begin{bmatrix}
+  a_{11} & a_{22} & a_{33} \\
+  a_{21} & a_{22} & a_{23} \\
+  a_{31} & a_{32} & a_{33} \\
+\end{bmatrix} \quad
+\begin{Bmatrix}
+  a_{11} & a_{22} & a_{33} \\
+  a_{21} & a_{22} & a_{23} \\
+  a_{31} & a_{32} & a_{33} \\
+\end{Bmatrix}\]
+
+\section{脚注测试}
+
+
+
+
+\section{图表测试}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width = 5cm]{./logo/acm-club.png}
+  \caption{山东财经大学 ACM 学社 社徽}
+  \label{fig:山东财经大学 ACM 学社 社徽}
+\end{figure}
+
+\begin{table}[ht]
+  \centering
+  \caption{%
+    简单的表格和引用 abc 123 \cite{whu-bachelor:1}
+  }
+  \label{table:简单的表格}
+  \begin{tabular}{cc}
+    \hline
+    a & b \\ \hline
+    c & d \\ \hline
+    测试 & 文本 \\ \hline
+  \end{tabular}
+\end{table}
+
+
+
+\appendix
+
+\chapter{测试}
+
+\section{公式测试}
+\section{公式测试}
+
+\begin{equation}
+  a^2 + b^2 = c^2
+\end{equation}
+
+\chapter{测试}
+
+\section{公式测试}
+\subsection{编号测试}
+\subsection{编号测试}
+\subsubsection{编号测试}
+\subsubsection{编号测试}
+
+\section{公式测试}
+
+\begin{equation}\label{equation:appendix-test}
+  a^2 + b^2 = c^2
+\end{equation}
+
+公式~\eqref{equation:appendix-test}
+
+
+\begin{acknowledgements}
+此模板的诞生离不开众多开源项目，在此项目的编写过程中参考了 WHU-Thesis 与 Fudan-Thesis 的大量代码。同时感谢21级山东财经大学 ACM 学社成员的支持。
+\end{acknowledgements}
+
+\end{document}
